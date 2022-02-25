@@ -1,4 +1,4 @@
-package ru.netology.rest;
+ package ru.netology.rest;
 
 import static io.restassured.RestAssured.given;
 import org.junit.jupiter.api.Test;
@@ -21,8 +21,7 @@ public class PostmanEchoApiTest {
                 //Проверки
                 .then()
                 .statusCode(200)
-                
-           
+                .body("data", equalTo("Здравствуйте вы позвонили," +
                         "в Интернет магазин." +
                         "Чем я могу вам помочь."));
     }
