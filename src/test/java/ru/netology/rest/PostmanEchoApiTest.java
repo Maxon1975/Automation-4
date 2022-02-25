@@ -21,7 +21,8 @@ public class PostmanEchoApiTest {
                 //Проверки
                 .then()
                 .statusCode(200)
-                .body("data", equalTo("Здравствуйте вы позвонили," +
+                
+           
                         "в Интернет магазин." +
                         "Чем я могу вам помочь."));
     }
